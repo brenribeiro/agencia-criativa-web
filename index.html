@@ -9,79 +9,134 @@
 </head>
 <body>
 
-<header class="header">
-  <div class="logo">Agência Criativa Web</div>
+<!-- ================= HEADER ================= -->
 
-  <!-- Botão hamburguer -->
-  <button class="menu-toggle" id="menu-toggle">
+<header class="header">
+
+  <div class="header__logo">
+    Agência Criativa Web
+  </div>
+
+  <button class="header__toggle" id="menu-toggle">
     ☰
   </button>
 
   <nav class="nav" id="nav">
-    <ul class="menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#depoimentos">Depoimentos</a></li>
-      <li><a href="#contato">Contato</a></li>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a class="nav__link" href="#home">Home</a>
+      </li>
+
+      <li class="nav__item">
+        <a class="nav__link" href="#sobre">Sobre</a>
+      </li>
+
+      <li class="nav__item">
+        <a class="nav__link" href="#servicos">Serviços</a>
+      </li>
+
+      <li class="nav__item">
+        <a class="nav__link" href="#depoimentos">Depoimentos</a>
+      </li>
+
+      <li class="nav__item">
+        <a class="nav__link" href="#contato">Contato</a>
+      </li>
     </ul>
   </nav>
+
 </header>
 
-<section id="home" class="home">
-  <h1>Soluções digitais criativas e responsivas</h1>
-  <p>Design moderno, código limpo e foco na experiência do usuário.</p>
-</section>
 
-<section id="sobre">
-  <h2>Sobre Nós</h2>
-  <p>
-    Somos uma agência especializada em design digital e desenvolvimento web,
-    criando experiências modernas, responsivas e alinhadas às necessidades do mercado atual.
-  </p>
-</section>
+<!-- ================= HERO ================= -->
 
-<section id="servicos">
-  <h2>Serviços</h2>
+<section id="home" class="hero section">
+  <div class="container">
+    <h1 class="hero__title">
+      Soluções digitais criativas e responsivas
+    </h1>
 
-  <div class="servicos-grid">
-    <div class="card">Design Gráfico</div>
-    <div class="card">Desenvolvimento Web</div>
-    <div class="card">Branding</div>
-    <div class="card">UX/UI Design</div>
+    <p class="hero__text">
+      Design moderno, código limpo e foco na experiência do usuário.
+    </p>
   </div>
 </section>
 
-<section id="depoimentos">
-  <h2>Depoimentos</h2>
 
-  <blockquote>
-    “Profissionalismo e criatividade do início ao fim.”
-    <span>— Cliente Fictício</span>
-  </blockquote>
+<!-- ================= SOBRE ================= -->
 
-  <blockquote>
-    “Meu site ficou moderno, rápido e totalmente responsivo.”
-    <span>— Outro Cliente</span>
-  </blockquote>
+<section id="sobre" class="section about">
+  <div class="container">
+    <h2 class="section__title">Sobre Nós</h2>
+
+    <p class="about__text">
+      Somos uma agência especializada em design digital e desenvolvimento web,
+      criando experiências modernas, responsivas e alinhadas às necessidades do mercado atual.
+    </p>
+  </div>
 </section>
 
-<section id="contato">
-  <h2>Contato</h2>
 
-  <form class="form-contato">
-    <input type="text" placeholder="Nome" required />
-    <input type="email" placeholder="E-mail" required />
-    <textarea placeholder="Mensagem" required></textarea>
-    <button type="submit">Enviar</button>
-  </form>
+<!-- ================= SERVIÇOS ================= -->
+
+<section id="servicos" class="section services">
+  <div class="container">
+    <h2 class="section__title">Serviços</h2>
+
+    <div class="services__grid">
+      <div class="card">Design Gráfico</div>
+      <div class="card">Desenvolvimento Web</div>
+      <div class="card">Branding</div>
+      <div class="card">UX/UI Design</div>
+    </div>
+  </div>
 </section>
 
-<footer>
-  <p>© 2026 Agência Criativa Web</p>
+
+<!-- ================= DEPOIMENTOS ================= -->
+
+<section id="depoimentos" class="section testimonials">
+  <div class="container">
+    <h2 class="section__title">Depoimentos</h2>
+
+    <blockquote class="testimonials__item">
+      “Profissionalismo e criatividade do início ao fim.”
+      <span class="testimonials__author">— Cliente Fictício</span>
+    </blockquote>
+
+    <blockquote class="testimonials__item">
+      “Meu site ficou moderno, rápido e totalmente responsivo.”
+      <span class="testimonials__author">— Outro Cliente</span>
+    </blockquote>
+  </div>
+</section>
+
+
+<!-- ================= CONTATO ================= -->
+
+<section id="contato" class="section contact">
+  <div class="container">
+    <h2 class="section__title">Contato</h2>
+
+    <form class="form">
+      <input class="form__input" type="text" placeholder="Nome" required />
+      <input class="form__input" type="email" placeholder="E-mail" required />
+      <textarea class="form__textarea" placeholder="Mensagem" required></textarea>
+
+      <button class="button button--primary" type="submit">
+        Enviar
+      </button>
+    </form>
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= ->
+
+<footer class="footer">
+  <p class="footer__text">© 2026 Agência Criativa Web</p>
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
