@@ -38,8 +38,11 @@ A refatoração foi realizada com base nos seguintes critérios:
 Foi utilizada a metodologia BEM (Block, Element, Modifier) para padronização das classes, seguindo a estrutura:
 
 .bloco
+
 .bloco__elemento
+
 .bloco__elemento--modificado
+
 Essa abordagem facilita a leitura, organização e manutenção do CSS.
 
 ✔ Redução da Especificidade
@@ -64,8 +67,11 @@ O layout permanece totalmente responsivo, utilizando:
 📂 Estrutura de Arquivos
 
 index.html
+
 estilos.css
+
 script.js
+
 README.md
 
 
