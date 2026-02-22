@@ -1,41 +1,74 @@
-# Agência Criativa Web
+🌐 Agência Criativa Web
 
-Projeto desenvolvido com o objetivo de aplicar conceitos de Design Responsivo,
-Flexbox, CSS Grid e Unidades Relativas, conforme proposto em atividade acadêmica.
+Projeto desenvolvido como atividade acadêmica com o objetivo de aplicar conceitos de Design Responsivo e organização estrutural de CSS.
 
-## 🧩 Tecnologias Utilizadas
-- HTML5
-- CSS3
-- JavaScript
-- Flexbox
-- CSS Grid
-- Media Queries
+⸻
 
-## 🎯 Objetivo do Projeto
-Desenvolver uma página web moderna, responsiva e adaptável a diferentes tamanhos
-de tela, simulando o site institucional de uma agência de design digital.
+🎯 Objetivo
 
-## 📱 Responsividade
-O layout foi projetado utilizando:
-- Unidades relativas (rem, vw, vh, fr)
-- Flexbox para navegação
-- CSS Grid para a seção de serviços
-- Media queries para dispositivos móveis
+Refatorar o código CSS do projeto “Agência Criativa Web”, aplicando os conceitos aprendidos no módulo, com foco em:
+	•	Organização e padronização do código
+	•	Redução da especificidade
+	•	Melhoria da reutilização de estilos
+	•	Facilitar a manutenção futura
 
-## 🍔 Menu Responsivo
-Em telas menores, o menu de navegação é convertido em um menu hambúrguer,
-controlado via JavaScript.
+⸻
 
-## 📂 Estrutura de Arquivos
+🧩 Tecnologias Utilizadas
+	•	HTML5
+	•	CSS3
+	•	JavaScript
+	•	Flexbox
+	•	CSS Grid
+	•	Media Queries
+
+⸻
+
+🔄 Refatoração do CSS
+
+A refatoração foi realizada com base nos seguintes critérios:
+
+✔ Revisão e Organização
+	•	Remoção de estilos redundantes e repetitivos
+	•	Organização das regras de forma lógica e clara
+	•	Separação entre estilos gerais, componentes e seções específicas
+
+✔ Aplicação da Metodologia BEM
+
+Foi utilizada a metodologia BEM (Block, Element, Modifier) para padronização das classes, seguindo a estrutura:
+
+.bloco
+.bloco__elemento
+.bloco__elemento--modificado
+Essa abordagem facilita a leitura, organização e manutenção do CSS.
+
+✔ Redução da Especificidade
+	•	Evitado o uso de seletores de ID
+	•	Substituição de seletores genéricos por classes bem definidas
+	•	Redução de seletores muito específicos ou profundos
+	•	Criação de classes reutilizáveis
+
+⸻
+
+📱 Responsividade
+
+O layout permanece totalmente responsivo, utilizando:
+	•	Unidades relativas (rem, vw, vh, fr)
+	•	Flexbox para a navegação
+	•	CSS Grid na seção de serviços
+	•	Media Queries para adaptação em dispositivos móveis
+	•	Menu hambúrguer controlado via JavaScript
+
+⸻
+
+📂 Estrutura de Arquivos
 
 index.html
-
 estilos.css
-
 script.js
-
 README.md
 
 
-## 👩‍💻 Autora
-Brenda Ribeiro Batista  
+👩‍💻 Autora
+
+Brenda Ribeiro Batista
