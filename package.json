@@ -1,0 +1,1 @@
+{"name":"agencia-criativa-web","version":"1.0.0","description":"","main":"index.js","scripts":{"sass":"sass scss/estilos.scss css/estilos.css --watch"},"author":"","license":"ISC","devDependencies":{"sass":"^1.97.3"}}

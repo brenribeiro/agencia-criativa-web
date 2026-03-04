@@ -1,0 +1,21 @@
+// Mixin de botão padrão
+@mixin botao-padrao($bg-color) {
+  background-color: $bg-color;
+  color: $cor-branca;
+  padding: $espacamento / 2 $espacamento;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// Mixin de centralização
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

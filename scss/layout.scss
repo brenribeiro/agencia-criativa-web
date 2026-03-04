@@ -1,0 +1,35 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+.header {
+  background-color: $cor-primaria;
+  padding: $espacamento;
+
+  &__menu {
+    @include flex-center;
+    gap: $espacamento;
+
+    &--item {
+      list-style: none;
+
+      a {
+        color: $cor-branca;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.hero {
+  padding: $espacamento-grande 0;
+  text-align: center;
+
+  &__titulo {
+    font-size: 2.5rem;
+    margin-bottom: $espacamento / 2;
+  }
+
+  &__descricao {
+    margin-bottom: $espacamento;
+  }
+}

@@ -1,0 +1,26 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+.botao {
+  @include botao-padrao($cor-primaria);
+
+  &--secundario {
+    @include botao-padrao($cor-secundaria);
+  }
+}
+
+.card {
+  background: $cor-branca;
+  padding: $espacamento;
+  border-radius: 10px;
+  margin-bottom: $espacamento;
+
+  &__titulo {
+    font-size: 1.2rem;
+    margin-bottom: $espacamento / 2;
+  }
+
+  &__texto {
+    font-size: 0.9rem;
+  }
+}
