@@ -1,19 +1,88 @@
-/* Error: Undefined variable.
- *   ,
- * 4 |   color: $cor-branca;
- *   |          ^^^^^^^^^^^
- *   '
- *   scss\mixins.scss 4:10      botao-padrao()
- *   scss\componentes.scss 5:3  @use
- *   scss\estilos.scss 5:1      root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502    color: $cor-branca;\d\a   \2502           ^^^^^^^^^^^\a   \2575 \a   scss\\mixins.scss 4:10      botao-padrao()\a   scss\\componentes.scss 5:3  @use\a   scss\\estilos.scss 5:1      root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+  color: #2D2D2D;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #6C63FF;
+  padding: 20px;
+}
+.header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.header__menu--item {
+  list-style: none;
+}
+.header__menu--item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 40px 0;
+  text-align: center;
+}
+.hero__titulo {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.hero__descricao {
+  margin-bottom: 20px;
+}
+
+.botao {
+  background-color: #6C63FF;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.botao:hover {
+  opacity: 0.8;
+}
+.botao--secundario {
+  background-color: #2D2D2D;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.botao--secundario:hover {
+  opacity: 0.8;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.card__titulo {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.card__texto {
+  font-size: 0.9rem;
+}
+
+/*# sourceMappingURL=estilos.css.map */

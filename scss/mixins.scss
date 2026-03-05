@@ -3,7 +3,7 @@
 @mixin botao-padrao($bg-color) {
   background-color: $bg-color;
   color: variaveis.$cor-branca;
-  padding:variaveis.$espacamento; // 2 variaveis.$espacamento;
+  padding:variaveis.$espacamento / 2 variaveis.$espacamento;
   border: none;
   border-radius: 8px;
   cursor: pointer;
