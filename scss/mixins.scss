@@ -1,9 +1,10 @@
-@use 'variaveis';
+@use 'variaveis' ;
+@use "sass:math";
 
 @mixin botao-padrao($bg-color) {
   background-color: $bg-color;
   color: variaveis.$cor-branca;
-  padding:variaveis.$espacamento / 2 variaveis.$espacamento;
+  padding: math.div(variaveis.$espacamento, 2) math.div(variaveis.$espacamento, 1.5);
   border: none;
   border-radius: 8px;
   cursor: pointer;

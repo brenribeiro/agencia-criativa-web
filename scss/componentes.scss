@@ -1,6 +1,6 @@
 @use 'variaveis' as *;
 @use 'mixins' as *;
-
+@use 'sass:math';
 .botao {
   @include botao-padrao($cor-primaria);
 
@@ -17,7 +17,7 @@
 
   &__titulo {
     font-size: 1.2rem;
-    margin-bottom: $espacamento / 2;
+    margin-bottom: math.div($espacamento, 2);
   }
 
   &__texto {
