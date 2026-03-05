@@ -1,14 +1,15 @@
-// Mixin de botão padrão
+@use 'variaveis';
+
 @mixin botao-padrao($bg-color) {
   background-color: $bg-color;
-  color: $cor-branca;
-  padding: $espacamento / 2 $espacamento;
+  color: variaveis.$cor-branca;
+  padding:variaveis.$espacamento; // 2 variaveis.$espacamento;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
 
-  &:hover {
+  &:hover{
     opacity: 0.8;
   }
 }
